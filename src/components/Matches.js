@@ -13,12 +13,21 @@ class Matches extends Component {
           return (
             <div key={i} className="matches-list">
               <p>{ele.datetime}</p>
-              <li>{ele.home_team.country} <strong>{ele.home_team.goals}</strong> vs <strong>{ele.away_team.goals}</strong> {ele.away_team.country}</li>
+              <li>
+                {ele.home_team.country} &zwnj;
+                  <strong>{ele.home_team.goals}</strong> vs <strong>{ele.away_team.goals}</strong>
+                 &zwnj; {ele.away_team.country}
+              </li>
               <p>Winner: {ele.winner}</p>
             </div>
           )
         })}</ul> :
-          this.props.loader ? <img className='center-img' src={require('../images/loading.gif')} alt='Loading GIF' width='400' height='400' /> : this.props.error ? <p>Error obtaining results for country code provided!</p> :
+          this.props.loader ? <img
+            className='center-img'
+            src={require('../images/loading.gif')}
+            alt='Loading GIF' width='400' height='400' /> :
+             this.props.error ?
+             <p>Error obtaining results for country code provided!</p> :
         ""}</div>
       </div>
     )
