@@ -3,8 +3,8 @@ view their results.
 
 To build the app, execute the following:
 ```
-git clone https://github.com/krdelva/WorldCupViewer
-cd WorldCupViewer
+git clone https://github.com/krdelva/WorldCupViewer WorldCupAppKevinRD
+cd WorldCupAppKevinRD
 npm install
 npm start
 ```
