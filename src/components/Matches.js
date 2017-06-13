@@ -18,7 +18,7 @@ class Matches extends Component {
             </div>
           )
         })}</ul> :
-          this.props.loader ? <img className='center-img' src={require('../images/loading.gif')} alt='Loading GIF' width='400' height='400' /> : this.props.error ? <p>Country code not found!</p> :
+          this.props.loader ? <img className='center-img' src={require('../images/loading.gif')} alt='Loading GIF' width='400' height='400' /> : this.props.error ? <p>Error obtaining results for country code provided!</p> :
         ""}</div>
       </div>
     )

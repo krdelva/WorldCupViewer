@@ -18,7 +18,7 @@ export const getMatches = (countryCode) => {
         });
       },
       error: (jqXHR, textStatus, errorThrown) => {
-        console.log(errorThrown);
+        console.log(jqXHR);
         dispatch({
           type: 'MATCHES_ERR',
           errorThrown
