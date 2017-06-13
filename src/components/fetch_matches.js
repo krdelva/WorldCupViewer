@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-const rootURL = 'https://worldcup.sfg.io/matches/country?fifa_code=';
+const rootURL = 'http://worldcup.sfg.io/matches/country?fifa_code=';
 
 export const getMatches = (countryCode) => {
   console.log('fetching');
