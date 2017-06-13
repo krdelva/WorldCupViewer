@@ -29,7 +29,11 @@ class Search extends Component {
     return (
       <div>
         <form onSubmit={this.onFormSubmit}>
-          <input type='text' onChange={this.onChange} placeholder="Enter country code" value={this.state.countryCode}/>
+          <input
+            type='text'
+            onChange={this.onChange}
+            placeholder="Enter country code"
+            value={this.state.countryCode}/>
           <br />
           <button type='submit'>Search</button>
         </form>
